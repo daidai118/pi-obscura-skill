@@ -68,7 +68,7 @@ pi install git:github.com/daidai118/pi-obscura-skill
 Pinned, so `pi update` will skip it:
 
 ```bash
-pi install git:github.com/daidai118/pi-obscura-skill@v0.1.0
+pi install git:github.com/daidai118/pi-obscura-skill@v0.1.1
 ```
 
 ## Requirements
@@ -144,6 +144,12 @@ skills/obscura-cdp/scripts/obscura-cdp.mjs loadall <target> ".load-more" [ms]
 ```
 
 Prefer `fill` over `type` when you have a stable selector.
+
+## Project docs
+
+- [Contributing guide](./CONTRIBUTING.md)
+- [Roadmap](./ROADMAP.md)
+- [Release checklist](./RELEASE_CHECKLIST.md)
 
 ## Environment variables
 

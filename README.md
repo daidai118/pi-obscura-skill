@@ -39,7 +39,7 @@ pi install git:github.com/daidai118/pi-obscura-skill
 ### Pin to a release tag
 
 ```bash
-pi install git:github.com/daidai118/pi-obscura-skill@v0.1.0
+pi install git:github.com/daidai118/pi-obscura-skill@v0.1.1
 ```
 
 ### Local path, before publishing
@@ -83,7 +83,13 @@ Update all non-pinned Pi packages:
 pi update --extensions
 ```
 
-> If you want easy future updates, install **without** pinning a git ref. If you install `@v0.1.0`, Pi treats it as pinned and skips automatic package updates.
+> If you want easy future updates, install **without** pinning a git ref. If you install `@v0.1.1`, Pi treats it as pinned and skips automatic package updates.
+
+## Project docs
+
+- [Contributing guide](./CONTRIBUTING.md)
+- [Roadmap](./ROADMAP.md)
+- [Release checklist](./RELEASE_CHECKLIST.md)
 
 ## CI
 
