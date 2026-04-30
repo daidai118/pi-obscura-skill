@@ -55,6 +55,12 @@ The check classifies a site as:
 - `risky` → Chrome fallback is safer
 - `incompatible` → use Chrome / hybrid instead
 
+`check --json` also exposes machine-readable fields such as:
+- `heuristicVersion`
+- `riskLevel`
+- `issueCounts`
+- `decision.shouldFallbackToChrome`
+
 ### Inspect a page
 
 ```bash

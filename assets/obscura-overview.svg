@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="320" viewBox="0 0 960 320" fill="none">
+  <rect width="960" height="320" rx="24" fill="#0B1220"/>
+  <rect x="40" y="48" width="220" height="92" rx="16" fill="#162033" stroke="#3B82F6"/>
+  <text x="150" y="88" fill="#E5F0FF" font-size="26" text-anchor="middle" font-family="Arial, sans-serif">Pi</text>
+  <text x="150" y="118" fill="#9FB3C8" font-size="16" text-anchor="middle" font-family="Arial, sans-serif">agent / package install</text>
+  <rect x="370" y="48" width="220" height="92" rx="16" fill="#162033" stroke="#22C55E"/>
+  <text x="480" y="88" fill="#E5F0FF" font-size="24" text-anchor="middle" font-family="Arial, sans-serif">obscura-cdp</text>
+  <text x="480" y="118" fill="#9FB3C8" font-size="16" text-anchor="middle" font-family="Arial, sans-serif">low-memory browser runtime</text>
+  <rect x="700" y="48" width="220" height="92" rx="16" fill="#162033" stroke="#A78BFA"/>
+  <text x="810" y="88" fill="#E5F0FF" font-size="24" text-anchor="middle" font-family="Arial, sans-serif">Site</text>
+  <text x="810" y="118" fill="#9FB3C8" font-size="16" text-anchor="middle" font-family="Arial, sans-serif">page inspection / automation</text>
+  <path d="M260 94H370" stroke="#6EE7B7" stroke-width="4" stroke-linecap="round"/>
+  <path d="M590 94H700" stroke="#6EE7B7" stroke-width="4" stroke-linecap="round"/>
+  <rect x="210" y="196" width="540" height="86" rx="18" fill="#111A2B" stroke="#F59E0B"/>
+  <text x="480" y="230" fill="#FFF3D6" font-size="24" text-anchor="middle" font-family="Arial, sans-serif">Built-in compatibility self-check</text>
+  <text x="480" y="258" fill="#D6C28A" font-size="16" text-anchor="middle" font-family="Arial, sans-serif">Detects missing styles, collapsed layout, duplicate tiny controls, and risk signals</text>
+</svg>

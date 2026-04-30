@@ -68,11 +68,12 @@ pi install git:github.com/daidai118/pi-obscura-skill
 固定版本后，`pi update` 会跳过它：
 
 ```bash
-pi install git:github.com/daidai118/pi-obscura-skill@v0.1.1
+pi install git:github.com/daidai118/pi-obscura-skill@v0.1.2
 ```
 
 ## 项目文档
 
+- [Changelog](./CHANGELOG.md)
 - [Contributing guide](./CONTRIBUTING.md)
 - [Roadmap](./ROADMAP.md)
 - [Release checklist](./RELEASE_CHECKLIST.md)

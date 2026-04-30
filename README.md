@@ -14,6 +14,8 @@
 
 **Pi skill name:** `obscura-cdp`
 
+![Obscura overview](./assets/obscura-overview.svg)
+
 ## Product positioning
 
 - `pi-obscura-skill`: lightweight, low-memory, default first choice
@@ -39,7 +41,7 @@ pi install git:github.com/daidai118/pi-obscura-skill
 ### Pin to a release tag
 
 ```bash
-pi install git:github.com/daidai118/pi-obscura-skill@v0.1.1
+pi install git:github.com/daidai118/pi-obscura-skill@v0.1.2
 ```
 
 ### Local path, before publishing
@@ -87,6 +89,7 @@ pi update --extensions
 
 ## Project docs
 
+- [Changelog](./CHANGELOG.md)
 - [Contributing guide](./CONTRIBUTING.md)
 - [Roadmap](./ROADMAP.md)
 - [Release checklist](./RELEASE_CHECKLIST.md)

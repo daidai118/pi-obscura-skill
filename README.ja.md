@@ -68,11 +68,12 @@ pi install git:github.com/daidai118/pi-obscura-skill
 固定されるので `pi update` では更新されない例:
 
 ```bash
-pi install git:github.com/daidai118/pi-obscura-skill@v0.1.1
+pi install git:github.com/daidai118/pi-obscura-skill@v0.1.2
 ```
 
 ## プロジェクト文書
 
+- [Changelog](./CHANGELOG.md)
 - [Contributing guide](./CONTRIBUTING.md)
 - [Roadmap](./ROADMAP.md)
 - [Release checklist](./RELEASE_CHECKLIST.md)

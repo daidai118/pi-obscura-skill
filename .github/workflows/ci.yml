@@ -30,6 +30,12 @@ jobs:
           grep -q 'status: compatible' /tmp/obscura-check.txt
           grep -q 'recommended engine: obscura' /tmp/obscura-check.txt
 
+      - name: Smoke test JSON compatibility contract
+        run: |
+          set -euo pipefail
+          node skills/obscura-cdp/scripts/obscura-cdp.mjs check --json https://example.com > /tmp/obscura-check.json
+          node -e "const fs=require('fs'); const data=JSON.parse(fs.readFileSync('/tmp/obscura-check.json','utf8')); if (data.status!=='compatible') throw new Error('unexpected status'); if (data.recommendedEngine!=='obscura') throw new Error('unexpected engine'); if (!data.heuristicVersion) throw new Error('missing heuristicVersion'); if (!data.issueCounts || typeof data.issueCounts.total !== 'number') throw new Error('missing issueCounts');"
+
       - name: Stop Obscura daemon
         if: always()
         run: node skills/obscura-cdp/scripts/obscura-cdp.mjs stop || true

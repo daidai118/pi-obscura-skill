@@ -68,7 +68,7 @@ pi install git:github.com/daidai118/pi-obscura-skill
 Pinned, so `pi update` will skip it:
 
 ```bash
-pi install git:github.com/daidai118/pi-obscura-skill@v0.1.1
+pi install git:github.com/daidai118/pi-obscura-skill@v0.1.2
 ```
 
 ## Requirements
@@ -147,6 +147,7 @@ Prefer `fill` over `type` when you have a stable selector.
 
 ## Project docs
 
+- [Changelog](./CHANGELOG.md)
 - [Contributing guide](./CONTRIBUTING.md)
 - [Roadmap](./ROADMAP.md)
 - [Release checklist](./RELEASE_CHECKLIST.md)
