@@ -1,0 +1,29 @@
+{
+  "name": "pi-obscura-skill",
+  "version": "0.1.0",
+  "description": "Give your AI agent a lightweight headless browser via Obscura with no Chrome dependency",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-coding-agent",
+    "skills",
+    "obscura",
+    "cdp",
+    "browser",
+    "headless"
+  ],
+  "license": "MIT",
+  "files": [
+    "skills/",
+    "README.md",
+    "README.en.md",
+    "README.zh-CN.md",
+    "README.ja.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "skills": [
+      "./skills"
+    ]
+  }
+}
