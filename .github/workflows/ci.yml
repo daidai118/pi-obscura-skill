@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Syntax check
+        run: node --check skills/obscura-cdp/scripts/obscura-cdp.mjs
+
+      - name: Smoke test compatibility check
+        run: |
+          set -euo pipefail
+          node skills/obscura-cdp/scripts/obscura-cdp.mjs check https://example.com | tee /tmp/obscura-check.txt
+          grep -q 'status: compatible' /tmp/obscura-check.txt
+          grep -q 'recommended engine: obscura' /tmp/obscura-check.txt
+
+      - name: Stop Obscura daemon
+        if: always()
+        run: node skills/obscura-cdp/scripts/obscura-cdp.mjs stop || true

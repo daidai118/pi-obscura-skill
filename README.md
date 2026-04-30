@@ -1,5 +1,9 @@
 # pi-obscura-skill
 
+[![CI](https://github.com/daidai118/pi-obscura-skill/actions/workflows/ci.yml/badge.svg)](https://github.com/daidai118/pi-obscura-skill/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/daidai118/pi-obscura-skill)](https://github.com/daidai118/pi-obscura-skill/releases)
+[![License](https://img.shields.io/github/license/daidai118/pi-obscura-skill)](./LICENSE)
+
 > Lightweight, low-memory browser automation for Pi using [Obscura](https://github.com/h4ckf0r0day/obscura).
 
 **Languages / 语言 / 言語**
@@ -26,16 +30,22 @@ Use this package when you want the cheapest, simplest browser path first:
 
 ## Quick install
 
-### Before pushing to GitHub
-
-```bash
-pi install /Users/daidai/ai/pi-obscura-skill
-```
-
-### After pushing to GitHub
+### Latest from GitHub
 
 ```bash
 pi install git:github.com/daidai118/pi-obscura-skill
+```
+
+### Pin to a release tag
+
+```bash
+pi install git:github.com/daidai118/pi-obscura-skill@v0.1.0
+```
+
+### Local path, before publishing
+
+```bash
+pi install /Users/daidai/ai/pi-obscura-skill
 ```
 
 ### Install into the current project instead of global Pi settings
@@ -74,6 +84,10 @@ pi update --extensions
 ```
 
 > If you want easy future updates, install **without** pinning a git ref. If you install `@v0.1.0`, Pi treats it as pinned and skips automatic package updates.
+
+## CI
+
+This repository ships a GitHub Actions workflow that checks script syntax and runs a smoke test against `https://example.com`.
 
 ## GitHub repository metadata
 
